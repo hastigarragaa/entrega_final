@@ -1,0 +1,54 @@
+@use '../base/variables' as *;
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    .card {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        width: 280px;
+        text-align: center;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: $white-color;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+    &-img-top {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 8px;
+
+        iframe {
+            border: none;
+        }
+    }
+    
+    img {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    h3 {
+        color: $primary-color;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    
+    p {
+        color: $accent-color;
+        margin: 0 1rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+} 

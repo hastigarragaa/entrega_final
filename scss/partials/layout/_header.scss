@@ -1,0 +1,34 @@
+@use '../base/variables' as *;  
+@use '../base/mixins' as *;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 4rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+}
+
+// header p {
+//   font-size: 2rem;
+//   font-weight: 300;
+  
+// }
+

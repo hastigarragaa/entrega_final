@@ -1,0 +1,21 @@
+@use '../base/variables' as *; 
+
+nav {
+  ul {
+    gap: 2.5rem;
+    list-style: none;
+    margin-top: 1rem;
+    
+    li {
+      a {
+        color: $white-color;
+        font-size: 1.7rem;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ccc;
+      }
+  } 
+}
+}
+

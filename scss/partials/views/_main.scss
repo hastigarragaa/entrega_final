@@ -1,0 +1,20 @@
+@use '../base/variables' as *;  
+
+main {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+main p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  color: #666;
+}
+

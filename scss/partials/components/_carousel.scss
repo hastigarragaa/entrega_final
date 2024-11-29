@@ -1,0 +1,133 @@
+// @use '../base/variables' as *;  
+// @use '../base/mixins' as *; 
+
+
+// @keyframes slideIn {
+//   from {
+//     opacity: 0;
+//     transform: translateX(50%);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// .carousel-item img {
+//   width: 100%;
+//   max-width: 100%; 
+//   height: auto;
+//   object-fit: cover; 
+//   margin: 0 auto;           
+// }
+// .carousel-inner {
+//   text-align: center;
+  
+// }
+// .carousel-item {
+  
+//   padding: 0 150px; 
+//   border: 2px solid $light-color; 
+//   border-radius: $border-radius; 
+//   box-shadow: $box-shadow; 
+//   transition: none; // Desactiva la transición de Bootstrap
+//   animation: slideIn 1s ease-in-out;
+  
+// }
+
+// .carousel-caption {
+//   background: rgba(0, 0, 0, 0.5); 
+//   padding: 10px;
+//   border-radius: 8px;
+//   width: 50%;
+//   position: absolute;  
+//   bottom: 20px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   text-align: center; 
+//   z-index: 1;
+// }
+
+
+// .carousel-caption h5 {
+//   margin-bottom: 5px;
+//   color: $white-color;
+//   font-size: 1rem; 
+
+  
+// }
+
+// .carousel-caption a {
+//   padding: 0.3rem 1rem;
+//   background-color: $primary-color;
+//   color: $white-color;
+//   text-decoration: none;
+//   border-radius: 8px;
+  
+// }
+
+// .carousel-caption a:hover {
+//   background-color: $accent-color;
+// }
+// .carousel-control-prev {
+//   left: 0; 
+// }
+
+// .carousel-control-next {
+//   right: 0;
+// }
+
+// .carousel-control-prev-icon, .carousel-control-next-icon {
+//   background-color: $primary-color;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+  
+  
+// }
+
+// @include media(small) {
+//   .carousel-item {
+//     padding: 0 10px;     
+    
+//   }
+//   .carousel-item img {
+//     width: 100%;           
+//     object-fit: contain;  
+//   }
+  
+//   .carousel-caption {     
+//     bottom: 3%;      
+//     padding: 2px; 
+//     width: auto;   
+    
+//   }
+  
+//   .carousel-caption h5 {
+//     font-size: 0.8rem; 
+//     margin-bottom: 2px;
+//     max-width: fit-content;
+//     display: contents;
+//   }
+  
+//   .carousel-caption a {
+//     padding: 0.3rem ; 
+//     background-color: $primary-color;
+//     color: $white-color;
+//     text-decoration: none;
+//     border-radius: 8px;
+//     font-size: x-small;
+//   }
+//   .carousel-control-prev, .carousel-control-next {
+//     width: 25px;         
+//   }
+
+//   .carousel-control-prev-icon, .carousel-control-next-icon {
+//     width: 25px;
+//     height: 25px;
+//     border-radius: 50%;
+//   }
+// }
+
+
+

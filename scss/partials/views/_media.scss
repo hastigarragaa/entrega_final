@@ -1,0 +1,36 @@
+@use '../base/variables' as *;  
+@use '../base/mixins' as *; 
+
+@include media(small) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  nav ul {
+    text-align: center;
+  }
+
+}
+
+@include media(medium) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+  header p {
+    font-size: 1.8rem;
+  }
+  main h2 {
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1.9rem;
+  }
+  nav ul {
+    text-align: center;
+  }
+}
+
+@include media(large) {
+  nav ul {
+    text-align: center;
+  }
+}

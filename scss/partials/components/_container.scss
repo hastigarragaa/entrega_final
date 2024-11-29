@@ -1,0 +1,11 @@
+@use '../base/mixins' as *;
+@use '../base/variables' as *;
+
+.container-img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+}

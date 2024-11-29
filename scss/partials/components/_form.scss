@@ -1,0 +1,37 @@
+@use '../base/variables' as *; 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem;
+    border: 1px solid $light-color;
+    border-radius: $border-radius;
+}
+
+form button {
+    padding: 0.75rem 2rem;
+    background-color: $primary-color;
+    color: $white-color;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: $accent-color;
+}
