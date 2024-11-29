@@ -20,6 +20,7 @@ header {
   padding: 4rem 0;
   text-align: center;
 }
+
 header h1 {
   font-size: 4.5rem;
   font-weight: 700;
@@ -28,26 +29,15 @@ header h1 {
 }
 
 nav ul {
-  gap: 2.5rem;
   list-style: none;
+  gap: 2.5rem;
   margin-top: 1rem;
 }
+
 nav ul li a {
   color: #fff;
   font-size: 1.7rem;
   text-decoration: none;
-}
-nav ul li a:hover {
-  color: #ccc;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 1.2rem;
-  position: relative;
 }
 
 main {
@@ -68,36 +58,26 @@ main p {
   color: #666;
 }
 
-@media (max-width: 576px) {
-  header h1 {
-    font-size: 3.5rem;
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
   }
-  nav ul {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 4.5rem;
-  }
-  header p {
-    font-size: 1.8rem;
-  }
-  main h2 {
-    font-size: 3rem;
-  }
-  main p {
-    font-size: 1.9rem;
-  }
-  nav ul {
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-@media (min-width: 991px) {
-  nav ul {
-    text-align: center;
-  }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+  position: relative;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -134,58 +114,50 @@ form button:hover {
   background-color: #555;
 }
 
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  nav ul {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+  header p {
+    font-size: 1.8rem;
+  }
+  main h2 {
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1.9rem;
+  }
+  nav ul {
+    text-align: center;
+  }
+}
+@media (min-width: 991px) {
+  nav ul {
+    text-align: center;
+  }
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
 .container-img {
   display: block;
   width: 100%;
   max-width: 700px;
   margin: 2rem auto;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-.card-container .card {
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  width: 280px;
-  text-align: center;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-}
-.card-container .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-.card-container .card-img-top {
-  height: 250px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 8px;
-}
-.card-container .card-img-top iframe {
-  border: none;
-}
-.card-container .card img {
-  height: 180px;
-  object-fit: cover;
-  width: 100%;
-}
-.card-container .card h3 {
-  color: #333;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-.card-container .card p {
-  color: #555;
-  margin: 0 1rem 1rem;
-  font-size: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 body {
