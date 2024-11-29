@@ -9,8 +9,6 @@
 @use 'partials/components/form' as *;            
 @use 'partials/components/container' as *;
 @use 'partials/components/cards' as *;         
-@use 'partials/views/404' as *;
-
 
 body {
     font-family: $font-family;

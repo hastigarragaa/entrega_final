@@ -188,52 +188,6 @@ form button:hover {
   font-size: 1rem;
 }
 
-.error-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  background-color: #343a40;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 10;
-}
-.error-page h1 {
-  font-size: 5rem;
-  margin: 20px 0;
-}
-.error-page p {
-  font-size: 1.2rem;
-}
-.error-page .error-img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin: 20px 0;
-  max-height: 700px;
-  object-fit: contain;
-  z-index: 1;
-}
-.error-page .home-link {
-  text-decoration: none;
-  background-color: #3F7A36;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  margin-top: 20px;
-  z-index: 1;
-}
-.error-page .home-link:hover {
-  background-color: rgb(29, 52, 32);
-  color: white;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
